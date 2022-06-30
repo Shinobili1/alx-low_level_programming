@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 * main - prints size
 * Return 0: after printing
