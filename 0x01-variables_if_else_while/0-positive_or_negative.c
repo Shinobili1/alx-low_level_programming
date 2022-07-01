@@ -3,11 +3,10 @@
 #include <stdio.h>
 
 /**
-* main - assign a random number to variable n and print
-* based on a condition
+* main - assign a random number to variable n
 * Return : always 0
 */
-int main(void)
+int main()
 {
 int n;
 srand(time(0));
