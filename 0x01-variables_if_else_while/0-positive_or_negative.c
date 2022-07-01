@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
-*main - assign a random number to variable n
+*main -> assign a random number to variable n
 *print whether number is positive or negative
-*Return : 0 if successful
+*Return : always 0
 */
 int main(void)
 {
@@ -14,7 +14,7 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
-printf("%d is a positive number\n", n);
+printf("%d is positive\n", n);
 }
 if (n == 0)
 {
@@ -22,7 +22,7 @@ printf("%d is zero\n", n);
 }
 if (n < 0)
 {
-printf("%d is a negative number\n", n);
+printf("%d is negative\n", n);
 }
 return (0);
 }
