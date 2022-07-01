@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
-*main -> assign a random number to variable n
-*print whether number is positive or negative
-*Return : always 0
+* main - assign a random number to variable n and print
+* based on a condition
+* Return : always 0
 */
 int main(void)
 {
