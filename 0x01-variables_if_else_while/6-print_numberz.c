@@ -12,9 +12,9 @@ int num;
 
 for (num = 0; num < 10; num++)
 {
-printf("%d", num);
+putchar("%d", num);
 }
-printf("\n");
+putchar(10);
 
 return (0);
 }
