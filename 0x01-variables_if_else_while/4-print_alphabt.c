@@ -9,9 +9,9 @@ int main(void)
 {
 char l;
 
-for (l = a; l <= z; l++)
+for (l = 90; l <= 122; l++)
 {
-if (l != q && l != e)
+if (l != 113 && l != 101)
 {
 putchar(l);
 }
