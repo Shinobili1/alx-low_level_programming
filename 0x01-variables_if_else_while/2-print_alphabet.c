@@ -7,9 +7,12 @@
  */
 int main(void)
 {
-char letter;
-for (letter = a; letter <= z; letter++)
-putchar(letter);
-putchar(n);
+int l;
+for (l = 97; l <= 122; l++)
+{
+putchar(l);
+}
+putchar(10);
+
 return (0);
 }
