@@ -12,21 +12,20 @@
 int main(void)
 {
 int n;
-int nth;
-nth = n % 10;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if (nth > 5)
+printf("Last digit of %d is", n);
+if (n > 5)
 {
-printf("Last digit of %d is %d and is greater than 5", n, nth);
+printf("greater than 5", n);
 }
-if (nth == 0)
+if (n == 0)
 {
-printf("Last digit of %d is %d and is 0", n, nth);
+printf("0", n);
 }
-if (nth < 6 && nth != 0)
+if (n < 6 && n != 0)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0", n, nth);
+printf("less than 6 and not 0", n);
 }
 printf("\n");
 return (0);
