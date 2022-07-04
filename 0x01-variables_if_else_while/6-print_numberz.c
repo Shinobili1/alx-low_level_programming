@@ -12,7 +12,7 @@ int num;
 
 for (num = 48; num <= 57; num++)
 {
-putchar((num % 0) + 48);
+putchar((num % 10) + 0);
 }
 putchar(10);
 
