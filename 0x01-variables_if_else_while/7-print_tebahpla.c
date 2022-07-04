@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-char letter;
+int letter;
 
 for (letter = 122; letter >= 97; letter--)
 {
 putchar(letter);
 }
-putchar(n);
+putchar(10);
 
 return (0);
 }
