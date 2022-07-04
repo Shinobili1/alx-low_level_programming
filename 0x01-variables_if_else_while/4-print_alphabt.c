@@ -9,7 +9,7 @@ int main(void)
 {
 char l;
 
-for (l = 90; l <= 122; l++)
+for (l = 97; l <= 122; l++)
 {
 if (l != 113 && l != 101)
 {
