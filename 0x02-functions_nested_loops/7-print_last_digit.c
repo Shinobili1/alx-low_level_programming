@@ -12,6 +12,6 @@ int s;
 if (a < 0)
 a = -a;
 s = a % 10;
-_putchar(s + 0);
-return (a % 10);
+_putchar(s + 45);
+return (s);
 }
