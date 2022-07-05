@@ -10,8 +10,10 @@ int print_last_digit(int a)
 {
 int s;
 if (a < 0)
+{
 a = -a;
 s = a % 10;
 _putchar(s + 45);
+}
 return (s);
 }
