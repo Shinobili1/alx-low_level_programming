@@ -5,13 +5,13 @@ include "main.h"
  *
  * Return: Always void
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-int alpha;
-
-for (alpha = 97; alpha <= 122; alpha++)
+int z;
+for (z = 97; j <= 122; z++)
 {
-_putchar(alpha);
+_putchar(z);
 }
 _putchar(10);
+
 }
