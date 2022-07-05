@@ -1,11 +1,18 @@
 #include "main.h"
 /**
-* add - Addition of two int
-* @a: first integer
-* @b: second integer
-* Return: Result
+* print_alphabet_x10 - print alphabet 10 times
+*
+* Return: Always 0 (Success)
 */
-int add(int a, int b)
+void print_alphabet_x10(void)
 {
-return (a + b);
+int a, b;
+for (a = 0; a <= 9; a++)
+{
+for (b = 97; b <= 122; b++)
+{
+_putchar(b);
+}
+_putchar(10);
+}
 }
