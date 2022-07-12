@@ -1,0 +1,1 @@
+pointets_arrays_strings
