@@ -13,7 +13,7 @@ while (c >= 0)
 {
 if (str[c] == 0)
 {
-_putchar(n);
+_putchar(10);
 break;
 }
 _putchar(str[c]);
