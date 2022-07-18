@@ -9,16 +9,16 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-int x, y;
+int i, j;
 int c = 0;
 
-for (x = 0; s[x] != n; x++)
+for (i = 0; s[i] != n; i++)
 {
-if (s[x] != 32)
+if (s[i] != 32)
 {
-for (y = 0; accept[y] != 0; y++)
+for (j = 0; accept[j] != 0; j++)
 {
-if (s[x] == accept[y])
+if (s[i] == accept[j])
 c++;
 }
 }
