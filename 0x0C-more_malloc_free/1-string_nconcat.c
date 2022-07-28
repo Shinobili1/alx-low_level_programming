@@ -2,45 +2,43 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates to strings
- * @s1: first string
- * @s2: second string
- * @n: amount of bytes
+ * string_nconcat - Concatenates two strings using at
+ *                  most an inputted number of bytes.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate to s1.
  *
- * Return: pointer shall point to a newly allocated space in memory
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *o;
-unsigned int w, x, y, z;
+char *con;
+unsigned int l = n, ind;
 
 if (s1 == NULL)
 s1 = "";
+
 if (s2 == NULL)
 s2 = "";
 
-for (w = 0; s1[w] != 0; w++)
-;
+for (ind = 0; s1[ind]; ind++)
+l++;
 
-for (x = 0; s2[x] != 0; x++)
-;
+con = malloc(sizeof(char) * (l + 1));
 
-if (n > x)
-n = x;
-
-y = w + n;
-
-o = malloc(y + 1);
-
-if (o == NULL)
+if (con == NULL)
 return (NULL);
 
-for (w = 0; z < y; z++)
-if (z < w)
-o[z] = s1[z];
-else
-o[z] = s2[z - w];
-o[z] = 0;
+l = 0;
 
-return (o);
+for (ind = 0; s1[ind]; ind++)
+con[l++] = s1[ind];
+
+for (ind = 0; s2[ind] && ind < n; ind++)
+con[l++] = s2[ind];
+
+con[l] = 0;
+
+return (con);
 }
